@@ -1,0 +1,296 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #222;
+    background: #fafafa;
+    line-height: 1.6;
+}
+
+/* sections*/
+.section-full {
+    width: 100vw;
+    min-height: 100vh;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+/* titre*/
+h1, h2, h3, h4 {
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/*  Menu */
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #222;
+    padding: 10px 0;
+    z-index: 1000;
+}
+
+.menu-principal ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+
+.menu-principal a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 12px;
+    transition: 0.3s;
+}
+
+
+.menu-principal a:hover {
+    background: #ffffff22;
+    border-radius: 5px;
+}
+
+.menu-principal a.actif {
+    background: #fff;
+    color: #222;
+    border-radius: 5px;
+}
+
+/* accueil*/
+
+#accueil {
+    background: linear-gradient(135deg, #ec8b3b, #e6f8ff);
+    text-align: center;
+    padding-top: 100px;
+}
+
+.contenu-accueil {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+#accueil button {
+    padding: 10px 20px;
+    border: none;
+    background: #f80707;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#accueil button:hover {
+    background: #fc9208;
+}
+
+.search-box {
+    padding: 10px;
+    width: 250px;
+    border-radius: 8px;
+    border: 1px solid #aaa;
+}
+
+.image-accueil {
+    width: 300px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px #00000033;
+}
+
+/*formulaire*/
+
+#inscription {
+    background: #ffb980;
+}
+
+.formulaire {
+    max-width: 600px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+.formulaire input, .formulaire select, .formulaire textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #888;
+}
+
+.formulaire fieldset {
+    border: 1px solid #aaa;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+/*tableau*/
+
+
+#tableau {
+    background: #ffcea6;
+}
+
+table {
+    width: 80%;
+    margin: auto;
+    border-collapse: collapse;
+    background: white;
+    box-shadow: 0 0 10px #ccc;
+}
+
+
+caption {
+    font-weight: bold;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+thead {
+    background: #333;
+    color: white;
+}
+
+
+th, td {
+    padding: 12px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+
+tfoot {
+    background: #eee;
+}
+
+/*articles*/
+
+#articles {
+    background: #ffd997;
+}
+
+.bloc-articles {
+    display: flex;
+    gap: 30px;
+}
+
+.article {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.image-article {
+  width: 300px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px #00000033;
+}
+
+
+
+/*galerie*/
+
+#galerie {
+    background: #ffdeb9;
+}
+
+.galerie-flex {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.galerie-flex img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.galerie-flex img:hover {
+    transform: scale(1.2);
+}
+/*video*/
+
+#videos {
+    background: #fff2cd;
+}
+
+.liste-videos {
+    list-style: none;
+    text-align: center;
+}
+
+.liste-videos li {
+    margin: 10px;
+}
+
+.liste-videos a {
+    color: #6600aa;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.liste-videos a:hover {
+    text-decoration: underline;
+}
+
+/*pied*/
+
+
+footer {
+    background: #222;
+    color: white;
+}
+
+.footer-flex {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px 0;
+    gap: 30px;
+}
+
+footer a {
+    color: #80c0ff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.reseaux {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+}
+
+.reseaux img {
+    width: 35px;
+    height: 35px;
+}
