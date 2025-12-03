@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Ton Nom">
+    <meta name="description" content="TP2 - Mise en page Web">
+    <title>TP2 - Mise en page Web</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<!--MENU-->
+<body>
+    <header id="top">
+        <nav class="menu-principal">
+            <ul>
+                <li><a href="#accueil" class="actif">Accueil</a></li>
+                <li><a href="#inscription">Inscription</a></li>
+                <li><a href="#tableau">Tableau</a></li>
+                <li><a href="#articles">Articles</a></li>
+                <li><a href="#galerie">Galerie</a></li>
+                <li><a href="#videos">Vidéos</a></li>
+                <li><a href="#pied">Pied de page</a></li>
+            </ul>
+        </nav>
+    </header>
+<!--ACCEUiL-->
+    <section id="accueil" class="section-full">
+        <div class="contenu-accueil">
+
+ <img src="images/csmposter.jpg" alt="Image d'accueil" class="image-accueil">
+
+ <h1>Église Chainsaw Man</h1>
+ <p>Bienvenue à l'église, ici on chasse les démons au nom de Chainsaw Man</p>
+ <h2>Dany Nguyen</h2>
+ <p>582-1W1 - Mise en page Web<br>
+ Techniques d'intégration multimédia<br>
+Collège de Maisonneuve<br>
+Automne 2025</p>
+
+            <p>
+                Github Page :  
+                <a href="#" target="_blank">TonLienGithubPage</a>
+            </p>
+
+            <button onclick="document.location='#inscription'">
+                S'inscrire
+            </button>
+
+            <input type="search" placeholder="Rechercher..." class="search-box">
+
+        </div>
+    </section>
+
+<!-- INSCRIPTION-->
+    <section id="inscription" class="section-full">
+        <h2>Formulaire d'inscription</h2>
+
+        <form class="formulaire">
+
+            <label>Votre nom
+                <input type="text" name="nom" required>
+            </label>
+
+            <label>Adresse courriel
+                <input type="email" name="email" required>
+            </label>
+
+            <label>Mot de passe
+                <input type="password" name="mdp">
+            </label>
+
+            <label>Votre programme
+                <select name="programme">
+                    <option value="">Choisir</option>
+                    <option>TIM</option>
+                    <option>Informatique</option>
+                    <option>Autre</option>
+                </select>
+            </label>
+
+            <fieldset>
+                <legend>Préférences</legend>
+                <label><input type="checkbox"> Recevoir les nouvelles</label>
+                <label><input type="checkbox"> Participer aux activités</label>
+            </fieldset>
+
+            <input type="reset" value="Réinitialiser">
+            <input type="submit" value="Envoyer">
+        </form>
+    </section>
+
+<!-- TABLEAU-->
+    <section id="tableau" class="section-full">
+        <h2>Tableau des chasseurs de notre église</h2>
+
+        <table>
+
+            <thead>
+                <tr>
+                    <th>Nom du chasseurs</th>
+                    <th>Arme utilisée</th>
+                    <th>Nombre de chasses</th>
+                    <th>Nombre de démons abattues</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr><td>RIKU TANAKA</td><td>Katana</td><td>21</td><td>42</td></tr>
+                <tr><td>HARUTO AOYAMA</td><td>Machète</td><td>18</td><td>35</td></tr>
+                <tr><td>YUNA SASAKI</td><td>Marteau</td><td>13</td><td>24</td></tr>
+                <tr><td>KAITO FUJIMOTO</td><td>Dagues</td><td>10</td><td>21</td></tr>
+                <tr><td>MIYU NAKAHARA</td><td>Fauche</td><td>9</td><td>18</td></tr>
+            </tbody>
+
+            <tfoot>
+                <tr>
+                    <td colspan="4">LES TOP CHASSEURS DE DÉMON</td>
+                </tr>
+            </tfoot>
+
+        </table>
+    </section>
+
+<!--ARTICLES-->
+    <section id="articles" class="section-full">
+        <h2>Articles</h2>
+
+        <article class="bloc-articles">
+
+            <div class="article">
+                <h3>LE DÉMON POISSON À ÉTÉ ABATTUE</h3>
+                <h4>Encore une victoire pour Haruto Aoyama!</h4>
+                <p>Le démon possèdait environ 110 dents tranchants, mais Haruto n'a pas hésité à le vaincre ! </p>
+                <img src="images/angler.jpg" alt="image-article">
+                <p>Il y a heureusement eu aucune victime !</p>
+            </div>
+
+            <div class="article">
+                <h3>LE DÉMON VOLCAN APPARAÎT</h3>
+                <h4>Location: Aogashima</h4>
+                <p>DÉMON ÊXTREMENT DANGEREUX, NE PAS Y ALLER SEUL</p>
+                <img src="images/octo.webp" alt="image-article">
+                <p>Nombre de chasseurs nécessaire: au moins 4</p>
+            </div>
+
+        </article>
+    </section>
+
+<!--GALERIE-->
+    <section id="galerie" class="section-full">
+        <h2>Galerie d'armes</h2>
+
+        <div class="galerie-flex">
+            <img src="images/31ncFpxjHzL._AC_UF894,1000_QL80_.jpg" alt="">
+            <img src="images/ab740bcf-b8ff-4fe9-b6a1-6ece514326f9.jpg" alt="">
+            <img src="images/CL-AXE-1002_grande.jpg" alt="">
+            <img src="images/DP160170.jpg" alt="">
+            <img src="images/MC-TA-57.jpg" alt="">
+        </div>
+    </section>
+
+<!--VIDEOS-->
+    <section id="videos" class="section-full">
+        <h2>Vidéos</h2>
+
+        <ul class="liste-videos">
+            <li><a href="https://www.youtube.com/watch?v=dFlDRhvM4L0&list=RDdFlDRhvM4L0&start_radio=1" target="_blank">KICKBACK</a></li>
+            <li><a href="https://www.youtube.com/watch?v=ux3QETpLcPs&list=RDux3QETpLcPs&start_radio=1" target="_blank">IRIS OUT</a></li>
+            <li><a href="https://www.youtube.com/watch?v=lFR-B3DBFRA&list=RDlFR-B3DBFRA&start_radio=1" target="_blank">TRAILER</a></li>
+        </ul>
+    </section>
+<!--PIED DE PAGE-->
+    <footer id="pied" class="section-full">
+        <h2>Description</h2>
+
+        <div class="footer-flex">
+
+            <div>
+                <h3>Adresse du Collège</h3>
+                <p>3800 Sherbrooke Est<br>Montréal, QC</p>
+            </div>
+
+            <div>
+                <h3>Liens importants</h3>
+                <ul>
+                    <li><a href="#">Collège de Maisonneuve</a></li>
+                    <li><a href="#">TIM</a></li>
+                    <li><a href="#">Support</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h3>Projet Mise en page Web</h3>
+                <p>Projet qui met en face la série japonaise Chainsaw Man. Je suis un grand fan.</p>
+            </div>
+
+            <div>
+                <h3>Réseaux sociaux</h3>
+                <ul class="reseaux">
+                    <li><img src="images/Facebook_f_logo_(2021).svg.png" alt="Facebook"></li>
+                    <li><img src="images/twitter-x-logo-png_seeklogo-492396.png" alt="Twitter"></li>
+                    <li><img src="images/Instagram_logo_2016.svg.webp" alt="Instagram"></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <p><a href="#accueil">Retour à l'accueil</a></p>
+        <p>Avis de confidentialité | Privacy Notice</p>
+
+    </footer>
+
+</body>
+</html>
+
